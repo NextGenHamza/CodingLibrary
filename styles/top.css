@@ -1,0 +1,211 @@
+.head{
+    height: 60px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #b6b6b6;
+    z-index: 50;
+}
+.left{
+    width: 250px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+}
+.middle{
+    flex: 1;
+    margin-right: 25px;
+    margin-left: 60px;
+    max-width: 450px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.right{
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    flex-shrink: 0;
+
+}
+img{
+    width: 27px;
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+}
+img:hover{
+    cursor: pointer;
+}
+button:hover{
+    cursor:pointer;
+}
+.ytblogo{
+    width:90px;
+}
+.hamburger{
+    margin-right: 25px;
+    margin-left: 25px;
+}
+.button1{
+    width: 60px;
+    height:40px;
+    border-width: 1px;
+    margin-left: -1px;
+    border-color: #cecece;
+    background-color: #f5f5f5;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-color: #c9c8c8;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    position: relative;
+
+}
+.button2{
+    width: 40px;
+    height:40px;
+    border-width: 1px;
+    border-color: #c9c8c8;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    border-style: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    height: 37px;
+    border-width: 1px;
+    flex:1;
+    border-style: solid;
+    border-color: #c9c8c8;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    width: 0px;
+
+    padding-left: 17px;
+
+}
+.box::placeholder{
+}
+.box:focus{
+    outline: none;
+    box-shadow: inset 1px 2px 3px #dedede;
+}
+.box:hover{
+    cursor:text;
+}
+.search.search2{
+    width: 23px;
+}
+.search{
+    padding-top: 10px;
+}
+.side{
+    padding-top: 20px;
+    padding-bottom:20px;
+    position: fixed;
+    background-color: white;
+    bottom: 0px;
+    left: 0px;
+    top: 60px;
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.roomside{
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 90px;
+    border: none;
+}
+.message{
+    font-size: 12px;
+    font-weight: 500;
+
+    padding-top: 6px;
+}
+.roomside:hover{
+    background-color: #efefef;
+    cursor: pointer;
+}
+.roomside img{
+    justify-content: center;
+}
+
+.count{
+    background-color: #de0000;
+    color: white;
+    font-weight: 600;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 0;
+    right:0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    font-size: 10px;
+    font-family: Arial;
+}
+.tooltip{
+    position: absolute;
+    bottom: -25px;
+    background-color: rgba(0,0,0,0.75);
+    color: white;
+    border-radius: 4px;
+    padding:4px;
+    opacity: 0;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    white-space: nowrap;
+    font-size: 14px;
+}
+.button1:hover .tooltip,.button2:hover .tooltip{
+    opacity: 1;
+    pointer-events: none;
+    transition: opacity 0.3s;
+}
+.average{
+    position: relative;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-direction: row;
+    font-size: 10px;
+    font-family: Arial;
+}
+.average:hover .tooltip{
+    opacity: 1;
+    pointer-events: none;
+    transition: opacity 0.3s;
+}
